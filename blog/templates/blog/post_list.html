@@ -1,18 +1,55 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <script type="text/javascript" src="main.js"></script>
+      <h1>Pay Cheque</h1>
+          <div class="container" style="margin-left: 0px;">
+          <h2>Personal</h2>
+          <div class="tooltip hvr-grow" style="float:left; width:25%; position:relative;opacity:1">
+            <span class = "tooltiptext">Profile</span>
+            <img class = "img-responsive" src="resume.jpeg" style="padding-left: 15px;padding-right: 15px;">
+          </div>
+          <div class="tooltip hvr-grow" style="float:left; width:25%; position:relative;opacity:1">
+            <span class = "tooltiptext">Colleague</span>
+            <img class = "img-responsive" src="people.png" style="padding-left: 15px;padding-right: 15px;">
+          </div>
+          <div class="tooltip hvr-grow" style="float:left; width:25%; position:relative;opacity:1">
+            <span class = "tooltiptext">Mail Box</span>
+            <img class = "img-responsive" src="letterbox.jpeg" style="padding-left: 15px;padding-right: 15px;">
+          </div>
+          <div class="tooltip hvr-grow" style="float:left; width:25%; position:relative;opacity:1">
+            <span class = "tooltiptext">Notification</span>
+            <img class = "img-responsive" src="info.png" style="padding-left: 15px;padding-right: 15px;">
+          </div>
+          </div>
+        <div class="container" style="margin-left: 0px;">
+          <h2>Skill Enahancement</h2>
+          <div class="tooltip hvr-grow" style="float:left; width:25%; position:relative;opacity:1">
+            <span class = "tooltiptext">Learning</span>
+            <img class = "img-responsive" src="ideas.png" style="padding-left: 15px;padding-right: 15px;">
+          </div>
+          <div class="tooltip hvr-grow" style="float:left; width:25%; position:relative;opacity:1">
+            <span class = "tooltiptext">Assesment</span>
+            <img class = "img-responsive" src="checklist.png" style="padding-left: 15px;padding-right: 15px;">
+          </div>
         </div>
-
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <div class="container" style="margin-left: 0px;">
+          <h2>Search</h2>
+          <div class="tooltip hvr-grow" style="float:left; width:25%; position:relative;opacity:1">
+            <span class = "tooltiptext">Search</span>
+            <img class = "img-responsive" src="magni.png" style="padding-left: 15px;padding-right: 15px;">
+          </div>
+        </div>
     </div>
-{% endfor %}
-    </body>
+    </div>
+  </body>
 </html>
